@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Atividade 1 - MDC</title>
+</head>
+<body>
+    <script>
+           function mdc(z, y) {
+        while (y !== 0) {
+            var r = z % y;
+            z = y;
+            y = r;
+        }
+        return z;
+    }
+    function listaMDC(numberList) {
+        var resultadoMDC = numberList[0];
+
+        for (var i = 1; i < numberList.length; i++) {
+            resultadoMDC = mdc(resultadoMDC, numberList[i]);
+            document.write(resultadoMDC);
+        }
+        console.log(resultadoMDC);
+        return resultadoMDC;
+    }
+    listaMDC([13, 4, 28, 38]);
+    </script>
+</body>
+</html>

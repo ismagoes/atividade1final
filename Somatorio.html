@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Somatório</title>
+</head>
+<body>
+    <script>
+        var QuantNumeros = prompt("Indique quantos números terá a conta:");
+var Num;
+var SomaNumeros = 0;
+var i = 0;
+
+while (i < QuantNumeros) {
+	Num = parseInt(prompt("Indique cada número:"));
+	SomaNumeros = SomaNumeros + Num;
+	i = i + 1;
+}
+
+document.write("O resultado da soma é: " + SomaNumeros);
+    </script>
+
+</body>
+</html>

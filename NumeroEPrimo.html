@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1- Número Primo</title>
+</head>
+<body>
+    <script>
+             let Num = parseInt(prompt("Escolha um número:"))
+        let ePrimo = true
+      for (let i = 2; i < Num; i++) {
+      	if (Num % i == 0) {
+      		ePrimo = false;
+      		break;
+      	}
+      }
+      if (ePrimo) {
+        document.write("Esse número é primo");
+      } else {
+      	document.write("Esse número não é primo");
+
+      }
+    </script>
+</body>
+</html>
